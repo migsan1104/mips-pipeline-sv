@@ -8,6 +8,7 @@ source_file = 1, C:/MIPS_PIPELINED/src/Register.sv
 source_file = 1, C:/MIPS_PIPELINED/src/RAM.sv
 source_file = 1, C:/MIPS_PIPELINED/src/Four_Two_Mux.sv
 source_file = 1, C:/MIPS_PIPELINED/src/Adder.sv
+source_file = 1, C:/MIPS_PIPELINED/simulation/RAM_tb.sv
 source_file = 1, C:/MIPS_PIPELINED/Quartus/db/MIPS_PIPELINED.cbx.xml
 design_name = RAM
 instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, RAM, 1
