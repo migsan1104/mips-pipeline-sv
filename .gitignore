@@ -1,0 +1,21 @@
+# Quartus build directories
+quartus/db/
+quartus/incremental_db/
+quartus/output_files/
+
+# Backup files
+*.bak
+*.rpt
+*.smsg
+*.qws
+*.lock
+*.rdr.*
+
+# Simulation
+*.wlf
+transcript
+work/
+
+# OS clutter
+.DS_Store
+Thumbs.db
