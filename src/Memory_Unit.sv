@@ -1,4 +1,4 @@
-module Memory_Unit(input logic [7:0] addr,input logic write_en, en_0,en_1,clk,rst, output logic [31:0] data_out,output_port, input logic [31:0] data_in);
+module Memory_Unit(input logic [9:0] addr,input logic write_en, en_0,en_1,clk,rst, output logic [31:0] data_out,output_port, input logic [31:0] data_in);
 
 //internal signals
 logic [1:0] sel;
@@ -21,15 +21,15 @@ Four_Two_Mux MUX (.sel(sel),.data0(data_im),.data1(port0_data),.data2(port1_data
 //comb logic 
 always_comb begin
 	case (addr)
-	8'hFD:sel = 2'b01;
-	8'hFE:sel = 2'b10;
+	10'h3F4:sel = 2'b01;
+	10'h3F8:sel = 2'b10;
 	default: sel = 2'b0;
 	endcase
 end
 always_comb begin
 	en = 1'b1;
 	out_en = 1'b0;
-	if(write_en == 1'b1 && addr == 8'hFF) begin
+	if(write_en == 1'b1 && addr == 10'h3FC) begin
 		en = 1'b0; out_en = 1'b1;
 	end
 end
