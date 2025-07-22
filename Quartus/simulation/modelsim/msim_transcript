@@ -1,0 +1,38 @@
+# Reading pref.tcl
+# do MIPS_PIPELINED_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/RAM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:33:31 on Jul 21,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/RAM.sv 
+# -- Compiling module RAM
+# 
+# Top level modules:
+# 	RAM
+# End time: 20:33:31 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+rtl work
+# invalid command name "rtl"
+work rtl
+# invalid command name "work"
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+vlog RAM_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:33:59 on Jul 21,2025
+# vlog -reportprogress 300 RAM_tb.sv 
+# ** Error: (vlog-7) Failed to open design unit file "RAM_tb.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 20:33:59 on Jul 21,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.

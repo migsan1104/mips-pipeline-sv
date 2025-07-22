@@ -1,0 +1,38 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/MIPS_PIPELINED/Quartus/simulation/modelsim
+vRAM
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1753144411
+!i10b 1
+!s100 d;_EkDLNAHg_QPU`FEBLM2
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+ISCR>kmFJU0AAd:?_>kTiV0
+VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1753143579
+8C:/MIPS_PIPELINED/src/RAM.sv
+FC:/MIPS_PIPELINED/src/RAM.sv
+!i122 0
+L0 2 32
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1753144411.000000
+!s107 C:/MIPS_PIPELINED/src/RAM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/RAM.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+C:/MIPS_PIPELINED/src
+tCvgOpt 0
+n@r@a@m
