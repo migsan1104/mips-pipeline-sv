@@ -5,20 +5,18 @@ module RAM#(
 )(
     input  logic                  clk,
     input  logic                  mem_write,
-    input  logic [ADDR_WIDTH-1:0] addr,       
+	 
+    input  logic [ADDR_WIDTH-1:0] addr,
+	 
+	    
     input  logic [DATA_WIDTH-1:0] write_data,
+	 input logic mem_read,
     output logic [DATA_WIDTH-1:0] read_data
 );
 
-    logic [7:0] mem_array [0:(1<<ADDR_WIDTH)-1];  // Byte-addressed memory
+    logic [7:0] mem_array [0:(1<<ADDR_WIDTH)-1];  // Byte-addressed memory(Byte-allignment)
 
-    // reading as 4 seperate bytes , big endian 
-    assign read_data = {
-        mem_array[addr],
-        mem_array[addr + 1],
-        mem_array[addr + 2],
-        mem_array[addr + 3]
-    };
+   
 
     // Write 32-bit word as 4 separate bytes
     always_ff @(posedge clk) begin
@@ -29,6 +27,19 @@ module RAM#(
             mem_array[addr + 3] <= write_data[7:0];
         end
     end
+	 // comb logic for data memory, reading four bytes, big endian
+	 always_comb begin
+		if(mem_read) begin
+		  read_data = {
+        mem_array[addr],
+        mem_array[addr + 1],
+        mem_array[addr + 2],
+        mem_array[addr + 3]
+			};
+		end
+		else read_data = 32'b0;
+	 
+	 end
 
     initial begin
         if (MEM_INIT_FILE != "") begin

@@ -1,12 +1,12 @@
-module Memory_Unit(input logic [9:0] addr,input logic write_en, en_0,en_1,clk,rst, output logic [31:0] data_out,output_port, input logic [31:0] data_in);
+module Memory_Unit(input logic [9:0] addr,input logic [31:0] data_in, input logic write_en, en_0,en_1,clk,rst,mem_read, output logic [31:0] data_out,output_port);
 
 //internal signals
 logic [1:0] sel;
 logic [31:0] data_im,port0_data,port1_data;
 logic en,out_en;
 //creating components
-RAM memory(.addr(addr),.clk(clk),.mem_write(en),.write_data(data_in)
-,.read_data(data_im));
+RAM memory(.addr(addr),.clk(clk),.mem_write(en),.write_data(data_in),.mem_read(mem_read),
+.read_data(data_im));
 
 Register port0(.clk(clk),.data(data_in),.out(port0_data),
 .en(en_0),.rst(rst));
