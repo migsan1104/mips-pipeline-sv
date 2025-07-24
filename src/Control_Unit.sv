@@ -1,4 +1,4 @@
-module Control_Unit(input logic [5:0] IR, Funct,input logic clk,rst, output logic reg_write,is_signed,reg_dst,jump,branch,mem_to_reg,mem_write,mem_read,output logic [1:0] alu_sel, output logic [3:0] ALU_Code);
+module Control_Unit(input logic [4:0] IR2, input logic [5:0] IR, Funct,input logic clk,rst, output logic reg_write,is_signed,reg_dst,jump,branch,mem_to_reg,mem_write,mem_read,output logic [1:0] alu_sel, output logic [5:0] ALU_Code);
 //initializing custom type to represent instruction type;
 typedef enum logic [1:0] {R,M,J,B,I} Instruction_type;
 //initializing instruction type to perfrom controller logic
@@ -35,7 +35,7 @@ always_comb begin
 	mem_write = 1'b0;
 	mem_read = 1'b0;
 	alu_sel = 2'b0;
-	ALU_Code = 4'b0;
+	ALU_Code = 6'b0;
 	//decoding the instruction and setting the instruction type
 	case(IR)
 	6'b0: IT = R;
@@ -53,7 +53,7 @@ always_comb begin
 	//We now determine the control unit outputs 
 	case(IT)
 	R:begin
-	ALU_Code = 4'b01;
+	ALU_Code = 6'b10;
 	if(Funct != MULT && Funct != MULTU) begin
 		reg_dst = 1'b1;
 		reg_write = 1'b1;
@@ -76,10 +76,22 @@ always_comb begin
 	end
 	B:begin
 		branch = 1'b1;
-		ALU_Code = IR;
+		case(IR) 
+		6'h04: ALU_Code = BEQ;
+		6'h05: ALU_Code = BNE;
+		6'h06: ALU_Code = BLEZ;
+		6'h07 :ALU_Code = BGTZ;
+		6'h01: begin
+			if(IR2 == 6'b0) ALU_Code = BLTZ;
+			if(IR2 == 6'b1) ALU_Code = BGEZ;
+		end
+		default: begin end
+		endcase
+		
 	end
 	J:begin
 		jump = 1'b1;
+	
 	end
 	I:begin
 	alu_sel = 2'b01;
