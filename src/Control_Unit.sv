@@ -1,4 +1,4 @@
-module Control_Unit(input logic [4:0] IR2, input logic [5:0] IR, Funct,input logic clk,rst, output logic reg_write,is_signed,reg_dst,jump,branch,mem_to_reg,mem_write,mem_read,output logic [1:0] alu_sel, output logic [5:0] ALU_Code);
+module Control_Unit(input logic [4:0] IR2, input logic [5:0] IR, Funct,input logic clk,rst, output logic reg_write,is_signed,reg_dst,jump,branch,mem_to_reg,mem_write,mem_read,output logic [1:0] alu_sel, output logic [5:0] ALU_Code,Branch_Code);
 //initializing custom type to represent instruction type;
 typedef enum logic [1:0] {R,M,J,B,I} Instruction_type;
 //initializing instruction type to perfrom controller logic
@@ -23,6 +23,14 @@ localparam [5:0] BNE      = 6'b001010;
 localparam [5:0] BGEZ     = 6'b001011;
 localparam [5:0] BLTZ     = 6'b001100;
 localparam [5:0] SL       = 6'b000000;
+
+//these codes are sent to the branch resolution unit to decide what comparison we want
+localparam [5:0] BEQ_code = 6'h03;
+localparam [5:0] BNE_code = 6'h04;
+localparam [5:0] BLEZ_code = 6'h07;
+localparam [5:0] BGTZ_code = 6'h0F;
+localparam [5:0] BGEZ_code = 6'h11;
+localparam [5:0] BLTZ_code = 6'h13;
 
 always_comb begin
 	//initializing all outputs to 0  avoid latches
@@ -75,15 +83,18 @@ always_comb begin
 		end
 	end
 	B:begin
+	//ALU is told to halt
+		ALU_Code = HALT;
 		branch = 1'b1;
+	//logic for branch control
 		case(IR) 
-		6'h04: ALU_Code = BEQ;
-		6'h05: ALU_Code = BNE;
-		6'h06: ALU_Code = BLEZ;
-		6'h07 :ALU_Code = BGTZ;
+		6'h04: Branch_Code = BEQ_code;
+		6'h05: Branch_Code  = BNE_code;
+		6'h06: Branch_Code = BLEZ_code;
+		6'h07 :Branch_Code = BGTZ_code;
 		6'h01: begin
-			if(IR2 == 6'b0) ALU_Code = BLTZ;
-			if(IR2 == 6'b1) ALU_Code = BGEZ;
+			if(IR2 == 6'b0) Branch_Code = BLTZ_code;
+			if(IR2 == 6'b1) Branch_Code = BGEZ_code;
 		end
 		default: begin end
 		endcase

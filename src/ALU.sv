@@ -2,8 +2,8 @@ module ALU (
     input  logic [4:0]  ir,
     input  logic [5:0]  op_sel,
     input  logic [31:0] input1, input2,
-    output logic [31:0] result, res,
-    output logic        branch_taken
+    output logic [31:0] result, res
+   
 );
 
     // Funct codes
@@ -16,15 +16,9 @@ module ALU (
     localparam [5:0] A_R_S    = 6'b000011;
     localparam [5:0] S_O_L    = 6'b101010;
     localparam [5:0] S_O_L_U  = 6'b101011;
-    localparam [5:0] BLEZ     = 6'b000111;
-    localparam [5:0] BGTZ     = 6'b001000;
     localparam [5:0] AND1     = 6'b100100;
     localparam [5:0] OR1      = 6'b100101;
     localparam [5:0] XOR1     = 6'b100110;
-    localparam [5:0] BEQ      = 6'b001001;
-    localparam [5:0] BNE      = 6'b001010;
-    localparam [5:0] BGEZ     = 6'b001011;
-    localparam [5:0] BLTZ     = 6'b001100;
     localparam [5:0] SL       = 6'b000000;
 
     // Internal
@@ -36,7 +30,7 @@ module ALU (
         temp_mult = 64'b0;
         result    = 32'b0;
         result_h  = 32'b0;
-        branch_taken = 0;
+
 
         case (op_sel)
             ADDU    : result = input1 + input2;
@@ -55,16 +49,7 @@ module ALU (
             A_R_S   : result = $signed(input2) >>> ir;
             S_O_L   : if ($signed(input1) < $signed(input2)) result[0] = 1'b1;
             S_O_L_U : if (input1 < input2) result[0] = 1'b1;
-            BNE     : if (input1 != input2) branch_taken = 1'b1;
-            BEQ     : if (input1 == input2) branch_taken = 1'b1;
-            BGEZ    : if ($signed(input1) >= 0) branch_taken = 1'b1;
-            BLTZ    : if ($signed(input1) < 0) branch_taken = 1'b1;
             SL      : result = input2 << ir;
-            BLEZ    : if ($signed(input1) <= 0) branch_taken = 1'b1;
-            BGTZ    : begin
-                         result = input1;
-                         if ($signed(input1) > 0) branch_taken = 1'b1;
-                      end
             AND1    : result = input1 & input2;
             OR1     : result = input1 | input2;
             XOR1    : result = input1 ^ input2;
