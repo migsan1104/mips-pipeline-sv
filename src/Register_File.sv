@@ -1,4 +1,4 @@
-module Register_File(input logic clk,rst,JumpAndLink,wr_en,input logic [4:0] rd_addr0,rd_addr1,wr_addr,input logic [31:0] wr_data, output logic [31:0]  rd_data0,rd_data1);
+module Register_File(input logic clk,rst,JumpAndLink,wr_en,input logic [4:0] rd_addr0,rd_addr1,wr_addr,input logic [31:0] wr_data,link_addr, output logic [31:0]  rd_data0,rd_data1);
 integer i;
 //array of 32 bit registers 
 logic [31:0] registers [0:31];
@@ -12,7 +12,7 @@ always@(posedge clk or posedge rst) begin
 	end
 	else if (wr_en == 1'b1) begin
 		if(JumpAndLink == 1'b1) begin
-			registers[31] = wr_data;
+			registers[31] = link_addr;
 		end
 		else begin
 			if(wr_addr != 5'b00000) begin
