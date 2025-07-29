@@ -1,4 +1,4 @@
-module Control_Unit(input logic [4:0] IR2, input logic [5:0] IR, Funct,input logic clk,rst, output logic reg_write,is_signed,reg_dst,jump,branch,mem_to_reg,mem_write,mem_read,output logic [1:0] alu_sel, output logic [5:0] ALU_Code,Branch_Code);
+module Control_Unit(input logic [4:0] IR2, input logic [5:0] IR, Funct,input logic clk,rst, output logic jmp_link,jmp_source, reg_write,is_signed,reg_dst,jump,branch,mem_to_reg,mem_write,mem_read,output logic [1:0] alu_sel, output logic [5:0] ALU_Code,Branch_Code);
 //initializing custom type to represent instruction type;
 typedef enum logic [1:0] {R,M,J,B,I} Instruction_type;
 //initializing instruction type to perfrom controller logic
@@ -44,6 +44,8 @@ always_comb begin
 	mem_read = 1'b0;
 	alu_sel = 2'b0;
 	ALU_Code = 6'b0;
+	jmp_source = 1'b0;
+	jmp_link = 1'b0;
 	//decoding the instruction and setting the instruction type
 	case(IR)
 	6'b0: IT = R;
@@ -66,8 +68,10 @@ always_comb begin
 		reg_dst = 1'b1;
 		reg_write = 1'b1;
 		end
-	if(Funct == 6'h08) jump = 1'b1;
-		
+	if(Funct == 6'h08) begin
+		jump = 1'b1;
+		jmp_source = 1'b1;
+		end
 	end
 	M:begin
 		is_signed = 1'b1;
@@ -102,7 +106,7 @@ always_comb begin
 	end
 	J:begin
 		jump = 1'b1;
-	
+		if(IR == 6'h03) jmp_link = 1'b1;	
 	end
 	I:begin
 	alu_sel = 2'b01;

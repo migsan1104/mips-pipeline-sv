@@ -13,11 +13,15 @@ always_comb begin
 		stall = 1'b1;
 	end
 	else begin
-	//flush
+	//flush, flush cannot happen in a stall. 
 		if(branch_taken) begin
 			flush = 1'b1;
-			pc_source = 2'b1;
+			pc_source = 2'b01;
 			end
+		if(jump) begin
+			flush = 1'b1;
+			pc_source = 2'b10;
+		end
 	end	
 	
 end
