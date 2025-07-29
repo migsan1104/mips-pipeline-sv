@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-// DATE "07/28/2025 21:48:41"
+// DATE "07/28/2025 21:54:02"
 
 // 
 // Device: Altera 10M50DAF484C6GES Package FBGA484
@@ -44,20 +44,20 @@ module Forwarding_Unit (
 	ForwardB_Ex,
 	ForwardA_ID,
 	ForwardB_ID);
-input 	[4:0] ID_EX_rs;
-input 	[4:0] ID_EX_rt;
-input 	[4:0] IF_ID_rs;
-input 	[4:0] IF_ID_rt;
-input 	[4:0] ID_EX_rd;
-input 	[4:0] EX_MEM_rd;
-input 	[4:0] MEM_WB_rd;
-input 	ID_EX_RegWrite;
-input 	EX_MEM_RegWrite;
-input 	MEM_WB_RegWrite;
-output 	[1:0] ForwardA_Ex;
-output 	[1:0] ForwardB_Ex;
-output 	[1:0] ForwardA_ID;
-output 	[1:0] ForwardB_ID;
+input 	logic [4:0] ID_EX_rs ;
+input 	logic [4:0] ID_EX_rt ;
+input 	logic [4:0] IF_ID_rs ;
+input 	logic [4:0] IF_ID_rt ;
+input 	logic [4:0] ID_EX_rd ;
+input 	logic [4:0] EX_MEM_rd ;
+input 	logic [4:0] MEM_WB_rd ;
+input 	logic ID_EX_RegWrite ;
+input 	logic EX_MEM_RegWrite ;
+input 	logic MEM_WB_RegWrite ;
+output 	logic [1:0] ForwardA_Ex ;
+output 	logic [1:0] ForwardB_Ex ;
+output 	logic [1:0] ForwardA_ID ;
+output 	logic [1:0] ForwardB_ID ;
 
 // Design Ports Information
 // ForwardA_Ex[0]	=>  Location: PIN_K14,	 I/O Standard: 2.5 V,	 Current Strength: Default
