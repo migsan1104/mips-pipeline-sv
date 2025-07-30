@@ -1,8 +1,8 @@
 module ALU (
-    input  logic [4:0]  ir,
+    input  logic [4:0]  shamt,
     input  logic [5:0]  op_sel,
     input  logic [31:0] input1, input2,
-    output logic [31:0] result, res
+    output logic [31:0] result, result_h
    
 );
 
@@ -23,7 +23,7 @@ module ALU (
 
     // Internal
     logic [63:0] temp_mult;
-    logic [31:0] result_h;
+    
 
     // ALU Logic
     always_comb begin
@@ -45,11 +45,11 @@ module ALU (
                          result    = temp_mult[31:0];
                          result_h  = temp_mult[63:32];
                       end
-            L_R_S   : result = input2 >> ir;
-            A_R_S   : result = $signed(input2) >>> ir;
+            L_R_S   : result = input2 >> shamt;
+            A_R_S   : result = $signed(input2) >>> shamt;
             S_O_L   : if ($signed(input1) < $signed(input2)) result[0] = 1'b1;
             S_O_L_U : if (input1 < input2) result[0] = 1'b1;
-            SL      : result = input2 << ir;
+            SL      : result = input2 << shamt;
             AND1    : result = input1 & input2;
             OR1     : result = input1 | input2;
             XOR1    : result = input1 ^ input2;

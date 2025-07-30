@@ -1,17 +1,31 @@
-module Memory_Unit(input logic [9:0] addr,input logic [31:0] data_in, input logic write_en, en_0,en_1,clk,rst,mem_read, output logic [31:0] data_out,output_port);
+module Memory_Unit #(
+    parameter ADDR_WIDTH = 10
+)(
+    input  logic [ADDR_WIDTH-1:0] addr,
+    input  logic [31:0] data_in,
+    input  logic [31:0] switches,
+    input  logic write_en,
+    input  logic en_0,
+    input  logic en_1,
+    input  logic clk,
+    input  logic rst,
+    input  logic mem_read,
+    output logic [31:0] data_out,
+    output logic [31:0] output_port
+);
 
 //internal signals
 logic [1:0] sel;
 logic [31:0] data_im,port0_data,port1_data;
 logic en,out_en;
 //creating components
-RAM memory(.addr(addr),.clk(clk),.mem_write(en),.write_data(data_in),.mem_read(mem_read),
+RAM #(.ADDR_WIDTH(ADDR_WIDTH))memory(.addr(addr),.clk(clk),.mem_write(en),.write_data(data_in),.mem_read(mem_read),
 .read_data(data_im));
 
-Register port0(.clk(clk),.data(data_in),.out(port0_data),
+Register port0(.clk(clk),.data(switches),.out(port0_data),
 .en(en_0),.rst(rst));
 
-Register port1(.clk(clk),.data(data_in),.out(port1_data),
+Register port1(.clk(clk),.data(switches),.out(port1_data),
 .en(en_1),.rst(rst));
 
 Register out_port(.clk(clk),.data(data_in),.out(output_port),
