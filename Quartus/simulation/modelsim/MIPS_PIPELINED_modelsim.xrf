@@ -1,6 +1,6 @@
 vendor_name = ModelSim
+source_file = 1, C:/MIPS_PIPELINED/src/MIPS_Processor_Clock_TB.sv
 source_file = 1, C:/MIPS_PIPELINED/src/RAM_tb.sv
-source_file = 1, C:/MIPS_PIPELINED/Quartus/Temp.hex
 source_file = 1, C:/MIPS_PIPELINED/src/Zero_Extend.sv
 source_file = 1, C:/MIPS_PIPELINED/src/Two_One_Mux.sv
 source_file = 1, C:/MIPS_PIPELINED/src/Sign_Extend.sv
@@ -21,6 +21,9 @@ source_file = 1, C:/MIPS_PIPELINED/src/Branch_Resolution_Unit.sv
 source_file = 1, C:/MIPS_PIPELINED/src/Forwarding_Unit.sv
 source_file = 1, C:/MIPS_PIPELINED/src/MIPS_Processor.sv
 source_file = 1, C:/MIPS_PIPELINED/src/Seven_Segment_Decoder.sv
+source_file = 1, C:/MIPS_PIPELINED/src/Shift_l2_v2.sv
+source_file = 1, C:/MIPS_PIPELINED/Quartus/del_4_instructions.hex
+source_file = 1, C:/MIPS_PIPELINED/Quartus/del_4_data.hex
 source_file = 1, C:/MIPS_PIPELINED/Quartus/db/MIPS_PIPELINED.cbx.xml
 design_name = MIPS_Processor
 instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, MIPS_Processor, 1

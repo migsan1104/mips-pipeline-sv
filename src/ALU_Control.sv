@@ -34,11 +34,11 @@ always_comb begin
 				hi_en = 1'b1;
 			   lo_en = 1'b1;
 				end
-			 op_sel = alu_con;
-			 if(funct == 6'h10) begin
+			 op_sel = funct;
+			 if(funct == 6'h12) begin
 				op_sel = HALT; alu_lo_hi = 2'b01;
 				end
-			 if(funct == 6'h12) begin
+			 if(funct == 6'h10) begin
 				op_sel = HALT; alu_lo_hi = 2'b10;
 				end
 			end

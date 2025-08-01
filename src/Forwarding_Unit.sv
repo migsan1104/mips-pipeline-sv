@@ -17,22 +17,21 @@ always_comb begin
     ForwardB_ID = 2'b00;
 
     // this first set of if statements only apply to fowarding to the exe stage
-    // forwarding from mem to exe
-    if (EX_MEM_RegWrite && (EX_MEM_rd != 0) && (EX_MEM_rd == ID_EX_rs))
-        ForwardA_Ex = 2'b01;
-    if (EX_MEM_RegWrite && (EX_MEM_rd != 0) && (EX_MEM_rd == ID_EX_rt))
-        ForwardB_Ex = 2'b01;
+    
+	// ForwardA logic
+	if (EX_MEM_RegWrite && (EX_MEM_rd != 0) && (EX_MEM_rd == ID_EX_rs))
+    ForwardA_Ex = 2'b01; // Forward from MEM stage
+	else if (MEM_WB_RegWrite && (MEM_WB_rd != 0) && (MEM_WB_rd == ID_EX_rs))
+    ForwardA_Ex = 2'b10; // Forward from WB stage
 
-    // This section is to forward from wb to exe
-    if (MEM_WB_RegWrite && (MEM_WB_rd != 0) &&
-        !(EX_MEM_RegWrite && (EX_MEM_rd != 0) && (EX_MEM_rd == ID_EX_rs)) &&
-        (MEM_WB_rd == ID_EX_rs))
-        ForwardA_Ex = 2'b10;
 
-    if (MEM_WB_RegWrite && (MEM_WB_rd != 0) &&
-        !(EX_MEM_RegWrite && (EX_MEM_rd != 0) && (EX_MEM_rd == ID_EX_rt)) &&
-        (MEM_WB_rd == ID_EX_rt))
-        ForwardB_Ex = 2'b10;
+	// ForwardB logic
+	if (EX_MEM_RegWrite && (EX_MEM_rd != 0) && (EX_MEM_rd == ID_EX_rt))
+    ForwardB_Ex = 2'b01;
+	else if (MEM_WB_RegWrite && (MEM_WB_rd != 0) && (MEM_WB_rd == ID_EX_rt))
+    ForwardB_Ex = 2'b10;
+
+
 
     // this set of if statement is for forwarding to the ID stage, this is used in branch resolution
     // for inputA
@@ -41,17 +40,14 @@ always_comb begin
     else if (EX_MEM_RegWrite && (EX_MEM_rd != 0) && (EX_MEM_rd == IF_ID_rs))
         ForwardA_ID = 2'b10;
     // this last case is very rare 
-    else if (MEM_WB_RegWrite && (MEM_WB_rd != 0) && (MEM_WB_rd == IF_ID_rs))
-        ForwardA_ID = 2'b11;
+
 
     // for inputB
     if (ID_EX_RegWrite && (ID_EX_rd != 0) && (ID_EX_rd == IF_ID_rt))
         ForwardB_ID = 2'b01;
     else if (EX_MEM_RegWrite && (EX_MEM_rd != 0) && (EX_MEM_rd == IF_ID_rt))
         ForwardB_ID = 2'b10;
-    // this last case is very rare
-    else if (MEM_WB_RegWrite && (MEM_WB_rd != 0) && (MEM_WB_rd == IF_ID_rt))
-        ForwardB_ID = 2'b11;
+
 end
 
 endmodule

@@ -1,4 +1,27 @@
-module Control_Unit(input logic [4:0] IR2, input logic [5:0] IR, Funct, output logic jmp_link,jmp_source, reg_write,is_signed,reg_dst,jump,branch,mem_to_reg,mem_write,mem_read,alu_sel, output logic [5:0] ALU_Code,Branch_Code);
+module Control_Unit (
+    // Inputs
+    input  logic        IR2,
+    input  logic [5:0]  IR,
+    input  logic [5:0]  Funct,
+
+    // Single bit control signals
+    output logic        jmp_link,
+    output logic        jmp_source,
+    output logic        reg_write,
+    output logic        is_signed,
+    output logic        reg_dst,
+    output logic        jump,
+    output logic        branch,
+    output logic        mem_to_reg,
+    output logic        mem_write,
+    output logic        mem_read,
+    output logic        alu_sel,
+
+    // Outputs - 6 bit codes sent to alu control and branch control units
+    output logic [5:0]  ALU_Code,
+    output logic [5:0]  Branch_Code
+);
+
 //initializing custom type to represent instruction type;
 typedef enum logic [2:0] {R,M,J,B,I} Instruction_type;
 //initializing instruction type to perfrom controller logic
@@ -83,7 +106,7 @@ always_comb begin
 			mem_read = 1'b1;
 			mem_to_reg = 1'b1;
 		end
-		if(IR == 6'h28) begin
+		if(IR == 6'h2B) begin
 			mem_write = 1'b1;
 		end
 	end
@@ -98,8 +121,8 @@ always_comb begin
 		6'h06: Branch_Code = BLEZ_code;
 		6'h07 :Branch_Code = BGTZ_code;
 		6'h01: begin
-			if(IR2 == 6'b0) Branch_Code = BLTZ_code;
-			if(IR2 == 6'b1) Branch_Code = BGEZ_code;
+			if(IR2 == 1'b0) Branch_Code = BLTZ_code;
+			if(IR2 == 1'b1) Branch_Code = BGEZ_code;
 		end
 		default: begin end
 		endcase

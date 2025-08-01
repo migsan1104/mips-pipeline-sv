@@ -10,29 +10,338 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Two_One_Mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:00 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Two_One_Mux.sv 
+# -- Compiling module Two_One_Mux
+# 
+# Top level modules:
+# 	Two_One_Mux
+# End time: 21:16:00 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Sign_Extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:00 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Sign_Extend.sv 
+# -- Compiling module Sign_Extend
+# 
+# Top level modules:
+# 	Sign_Extend
+# End time: 21:16:00 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Shift_l2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:00 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Shift_l2.sv 
+# -- Compiling module Shift_l2
+# 
+# Top level modules:
+# 	Shift_l2
+# End time: 21:16:00 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Register.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:00 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Register.sv 
+# -- Compiling module Register
+# 
+# Top level modules:
+# 	Register
+# End time: 21:16:00 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/RAM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:33:31 on Jul 21,2025
+# Start time: 21:16:01 on Jul 31,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/RAM.sv 
 # -- Compiling module RAM
 # 
 # Top level modules:
 # 	RAM
-# End time: 20:33:31 on Jul 21,2025, Elapsed time: 0:00:00
+# End time: 21:16:01 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Four_Two_Mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:01 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Four_Two_Mux.sv 
+# -- Compiling module Four_Two_Mux
+# 
+# Top level modules:
+# 	Four_Two_Mux
+# End time: 21:16:01 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:01 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Adder.sv 
+# -- Compiling module Adder
+# 
+# Top level modules:
+# 	Adder
+# End time: 21:16:01 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Memory_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:01 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Memory_Unit.sv 
+# -- Compiling module Memory_Unit
+# 
+# Top level modules:
+# 	Memory_Unit
+# End time: 21:16:02 on Jul 31,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:02 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 21:16:02 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Register_File.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:02 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Register_File.sv 
+# -- Compiling module Register_File
+# 
+# Top level modules:
+# 	Register_File
+# End time: 21:16:02 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Control_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:02 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Control_Unit.sv 
+# -- Compiling module Control_Unit
+# 
+# Top level modules:
+# 	Control_Unit
+# End time: 21:16:02 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/ROM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:02 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/ROM.sv 
+# -- Compiling module ROM
+# 
+# Top level modules:
+# 	ROM
+# End time: 21:16:02 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/ALU_Control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:02 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/ALU_Control.sv 
+# -- Compiling module ALU_Control
+# 
+# Top level modules:
+# 	ALU_Control
+# End time: 21:16:03 on Jul 31,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Hazard_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:03 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Hazard_Unit.sv 
+# -- Compiling module Hazard_Unit
+# 
+# Top level modules:
+# 	Hazard_Unit
+# End time: 21:16:03 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Branch_Resolution_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:03 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Branch_Resolution_Unit.sv 
+# -- Compiling module Branch_Resolution_Unit
+# 
+# Top level modules:
+# 	Branch_Resolution_Unit
+# End time: 21:16:03 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Forwarding_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:03 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Forwarding_Unit.sv 
+# -- Compiling module Forwarding_Unit
+# 
+# Top level modules:
+# 	Forwarding_Unit
+# End time: 21:16:03 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/MIPS_Processor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:03 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/MIPS_Processor.sv 
+# -- Compiling module MIPS_Processor
+# 
+# Top level modules:
+# 	MIPS_Processor
+# End time: 21:16:03 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Seven_Segment_Decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:03 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Seven_Segment_Decoder.sv 
+# -- Compiling module Seven_Segment_Decoder
+# 
+# Top level modules:
+# 	Seven_Segment_Decoder
+# End time: 21:16:03 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Shift_l2_v2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:03 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Shift_l2_v2.sv 
+# -- Compiling module Shift_l2_v2
+# 
+# Top level modules:
+# 	Shift_l2_v2
+# End time: 21:16:04 on Jul 31,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/src {C:/MIPS_PIPELINED/src/Register_v2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:04 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/src" C:/MIPS_PIPELINED/src/Register_v2.sv 
+# -- Compiling module Register_v2
+# 
+# Top level modules:
+# 	Register_v2
+# End time: 21:16:04 on Jul 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-rtl work
-# invalid command name "rtl"
-work rtl
-# invalid command name "work"
-vlib work
-# ** Warning: (vlib-34) Library already exists at "work".
-vlog RAM_tb.sv
+# vlog -sv -work work +incdir+C:/MIPS_PIPELINED/Quartus/../src {C:/MIPS_PIPELINED/Quartus/../src/MIPS_Processor_Clock_TB.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:33:59 on Jul 21,2025
-# vlog -reportprogress 300 RAM_tb.sv 
-# ** Error: (vlog-7) Failed to open design unit file "RAM_tb.sv" in read mode.
-# No such file or directory. (errno = ENOENT)
-# End time: 20:33:59 on Jul 21,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Start time: 21:16:04 on Jul 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/MIPS_PIPELINED/Quartus/../src" C:/MIPS_PIPELINED/Quartus/../src/MIPS_Processor_Clock_TB.sv 
+# -- Compiling module MIPS_Processor_Clock_TB
+# 
+# Top level modules:
+# 	MIPS_Processor_Clock_TB
+# End time: 21:16:04 on Jul 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  MIPS_Processor_Clock_TB
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" MIPS_Processor_Clock_TB 
+# Start time: 21:16:04 on Jul 31,2025
+# Loading sv_std.std
+# Loading work.MIPS_Processor_Clock_TB
+# Loading work.MIPS_Processor
+# Loading work.ROM
+# Loading work.Adder
+# Loading work.Register
+# Loading work.Register_v2
+# Loading work.Four_Two_Mux
+# Loading work.Two_One_Mux
+# Loading work.Sign_Extend
+# Loading work.Register_File
+# Loading work.Shift_l2
+# Loading work.Shift_l2_v2
+# Loading work.Control_Unit
+# Loading work.Hazard_Unit
+# Loading work.Branch_Resolution_Unit
+# Loading work.Forwarding_Unit
+# Loading work.ALU
+# Loading work.ALU_Control
+# Loading work.Memory_Unit
+# Loading work.RAM
+# Loading work.Seven_Segment_Decoder
+# 
+# do C:/MIPS_PIPELINED/Quartus/simulation/modelsim/wave.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/clk
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/rst
+# add wave -noupdate -radix hexadecimal -childformat {{{/MIPS_Processor_Clock_TB/dut/reg_file/registers[0]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[1]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[2]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[3]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[4]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[5]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[6]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[7]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[8]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[9]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[10]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[11]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[12]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[13]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[14]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[15]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[16]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[17]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[18]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[19]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[20]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[21]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[22]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[23]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[24]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[25]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[26]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[27]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[28]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[29]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[30]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[31]} -radix hexadecimal}} -expand -subitemconfig {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[0]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[1]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[2]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[3]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[4]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[5]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[6]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[7]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[8]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[9]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[10]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[11]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[12]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[13]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[14]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[15]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[16]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[17]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[18]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[19]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[20]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[21]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[22]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[23]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[24]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[25]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[26]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[27]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[28]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[29]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[30]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[31]} {-height 15 -radix hexadecimal}} /MIPS_Processor_Clock_TB/dut/reg_file/registers
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/reg_file/rd_addr0
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/reg_file/rd_addr1
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/reg_file/rd_data0
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/reg_file/rd_data1
+# add wave -noupdate -radix hexadecimal -childformat {{{/MIPS_Processor_Clock_TB/dut/reg_file/registers[0]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[1]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[2]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[3]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[4]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[5]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[6]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[7]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[8]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[9]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[10]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[11]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[12]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[13]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[14]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[15]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[16]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[17]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[18]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[19]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[20]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[21]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[22]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[23]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[24]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[25]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[26]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[27]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[28]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[29]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[30]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[31]} -radix hexadecimal}} -subitemconfig {{/MIPS_Processor_Clock_TB/dut/reg_file/registers[0]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[1]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[2]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[3]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[4]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[5]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[6]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[7]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[8]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[9]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[10]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[11]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[12]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[13]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[14]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[15]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[16]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[17]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[18]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[19]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[20]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[21]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[22]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[23]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[24]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[25]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[26]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[27]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[28]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[29]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[30]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/registers[31]} {-height 15 -radix hexadecimal}} /MIPS_Processor_Clock_TB/dut/reg_file/registers
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/reg_file/rst
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/reg_file/wr_addr
+# add wave -noupdate -radix hexadecimal -childformat {{{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[31]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[30]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[29]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[28]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[27]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[26]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[25]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[24]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[23]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[22]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[21]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[20]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[19]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[18]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[17]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[16]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[15]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[14]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[13]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[12]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[11]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[10]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[9]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[8]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[7]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[6]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[5]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[4]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[3]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[2]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[1]} -radix hexadecimal} {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[0]} -radix hexadecimal}} -subitemconfig {{/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[31]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[30]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[29]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[28]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[27]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[26]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[25]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[24]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[23]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[22]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[21]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[20]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[19]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[18]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[17]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[16]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[15]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[14]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[13]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[12]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[11]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[10]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[9]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[8]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[7]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[6]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[5]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[4]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[3]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[2]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[1]} {-height 15 -radix hexadecimal} {/MIPS_Processor_Clock_TB/dut/reg_file/wr_data[0]} {-height 15 -radix hexadecimal}} /MIPS_Processor_Clock_TB/dut/reg_file/wr_data
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/reg_file/wr_en
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/ID_EX_reg/out
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/ID_EX_reg/data
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/instruction_reg/data
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/instruction_reg/out
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/Instruction_memory/addr
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/Instruction_memory/read_data
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/MIPS_ALU/result
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/MIPS_ALU/result_h
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/MIPS_ALU/input1
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/MIPS_ALU/input2
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/MIPS_ALU/op_sel
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/EX_MEM_Result_Reg/data
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/EX_MEM_Result_Reg/out
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/MEM_Unit/data_out
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/MEM_Unit/write_en
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/MEM_Unit/data_in
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/MEM_Unit/output_port
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/MEM_Unit/addr
+# add wave -noupdate /MIPS_Processor_Clock_TB/dut/MEM_Unit/en
+# add wave -noupdate /MIPS_Processor_Clock_TB/dut/MEM_Unit/out_en
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/EX_Forward_B/data0
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/EX_Forward_B/data1
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/EX_Forward_B/data2
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/EX_Forward_B/data3
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/EX_Forward_B/out
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/EX_Forward_B/sel
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/HDU/ID_EX_rd
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/HDU/IF_ID_rs
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/HDU/IF_ID_rt
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/HDU/IF_ID_write
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/HDU/jump
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/HDU/mem_read
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/HDU/pc_source
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/HDU/pc_write
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/HDU/stall
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/EX_Forward_A/data0
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/EX_Forward_A/data1
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/EX_Forward_A/data2
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/EX_Forward_A/data3
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/ALU_Low_Reg/out
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/ALU_High_Reg/out
+# add wave -noupdate /MIPS_Processor_Clock_TB/dut/Control_Module/jump
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/Control_Module/IR
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/Control_Module/IR2
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/PC_Selection_Mux/data0
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/PC_Selection_Mux/data1
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/PC_Selection_Mux/data2
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/PC_Selection_Mux/data3
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/PC_Selection_Mux/out
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/PC_Selection_Mux/sel
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/PC_4/data
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/PC_4/out
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/BRU/branch
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/BRU/Branch_Code
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/BRU/branch_taken
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/BRU/input0
+# add wave -noupdate -radix hexadecimal /MIPS_Processor_Clock_TB/dut/BRU/input1
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {765113 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 358
+# configure wave -valuecolwidth 100
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 0
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 100
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {0 ps} {51572 ps}
+run -all
+# Loading memory from: DEL_4_Instructions.hex
+# Loading memory from: DEL_4_Data.hex
+# Break key hit
+# Break in Module Adder at C:/MIPS_PIPELINED/src/Adder.sv line 2
+# End time: 21:17:05 on Jul 31,2025, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 0

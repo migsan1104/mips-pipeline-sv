@@ -1,14 +1,13 @@
 module ROM#(
     parameter ADDR_WIDTH = 10, // 256 words
-    parameter DATA_WIDTH = 32, // words are 4 bytes long
-    parameter MEM_INIT_FILE = "Temp.hex"
+    parameter MEM_INIT_FILE = "ram_test_init.hex"
 )(
     
     input  logic [ADDR_WIDTH-1:0] addr,
 	 
 	    
 	
-    output logic [DATA_WIDTH-1:0] read_data
+    output logic [31:0] read_data
 );
 
     logic [7:0] mem_array [0:(1<<ADDR_WIDTH)-1];  // Byte-addressed memory(Byte-allignment)

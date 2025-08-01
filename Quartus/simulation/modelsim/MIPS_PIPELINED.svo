@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-// DATE "07/30/2025 14:47:48"
+// DATE "07/31/2025 13:19:33"
 
 // 
 // Device: Altera 10M50DAF484C6GES Package FBGA484
@@ -36,12 +36,12 @@ module MIPS_Processor (
 	button1,
 	switches,
 	LEDs);
-input 	logic clk ;
-input 	logic rst ;
-input 	logic button0 ;
-input 	logic button1 ;
-input 	logic [9:0] switches ;
-output 	logic [41:0] LEDs ;
+input 	clk;
+input 	rst;
+input 	button0;
+input 	button1;
+input 	[9:0] switches;
+output 	[41:0] LEDs;
 
 // Design Ports Information
 // clk	=>  Location: PIN_P15,	 I/O Standard: 2.5 V,	 Current Strength: Default

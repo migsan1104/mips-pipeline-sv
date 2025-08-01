@@ -1,4 +1,4 @@
-module Branch_Resolution_Unit (input logic branch,input logic [32:0] input0,input1, input logic [5:0] Branch_Code, output logic branch_taken);
+module Branch_Resolution_Unit (input logic branch,input logic [31:0] input0,input1, input logic [5:0] Branch_Code, output logic branch_taken);
 // Branch Codes
 localparam [5:0] BEQ_code = 6'h03;
 localparam [5:0] BNE_code = 6'h04;

@@ -9,30 +9,570 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/MIPS_PIPELINED/Quartus/simulation/modelsim
-vRAM
-DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1753144411
+vAdder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1754010961
 !i10b 1
-!s100 d;_EkDLNAHg_QPU`FEBLM2
-!s11b Dg1SIo80bB@j0V0VzS_@n1
-ISCR>kmFJU0AAd:?_>kTiV0
-VDg1SIo80bB@j0V0VzS_@n1
+!s100 `h[Uno84[g^Q689<7i6441
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]AkW99gW93XebYW1:`8<I2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1753143579
-8C:/MIPS_PIPELINED/src/RAM.sv
-FC:/MIPS_PIPELINED/src/RAM.sv
-!i122 0
-L0 2 32
-OV;L;2020.1;71
+w1752959743
+8C:/MIPS_PIPELINED/src/Adder.sv
+FC:/MIPS_PIPELINED/src/Adder.sv
+!i122 6
+Z5 L0 1 3
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1753144411.000000
+Z7 !s108 1754010961.000000
+!s107 C:/MIPS_PIPELINED/src/Adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Adder.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+C:/MIPS_PIPELINED/src
+Z10 tCvgOpt 0
+n@adder
+vALU
+R1
+Z11 !s110 1754010962
+!i10b 1
+!s100 W5igL>8o<]=fElK;G@Fm=2
+R3
+IZj3RCg8KfhjN@Vc?Md14c3
+R4
+S1
+R0
+w1753897445
+8C:/MIPS_PIPELINED/src/ALU.sv
+FC:/MIPS_PIPELINED/src/ALU.sv
+!i122 8
+L0 1 59
+R6
+r1
+!s85 0
+31
+Z12 !s108 1754010962.000000
+!s107 C:/MIPS_PIPELINED/src/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/ALU.sv|
+!i113 1
+R8
+R9
+R10
+n@a@l@u
+vALU_Control
+R1
+Z13 !s110 1754010963
+!i10b 1
+!s100 :`=W5UO0bNND:NY?OCDmJ1
+R3
+IP^EJNYZG=OcTHB[98S1OH1
+R4
+S1
+R0
+w1753922778
+8C:/MIPS_PIPELINED/src/ALU_Control.sv
+FC:/MIPS_PIPELINED/src/ALU_Control.sv
+!i122 12
+Z14 L0 1 57
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/MIPS_PIPELINED/src/ALU_Control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/ALU_Control.sv|
+!i113 1
+R8
+R9
+R10
+n@a@l@u_@control
+vBranch_Resolution_Unit
+R1
+R13
+!i10b 1
+!s100 T2ST]RJA@kEL1D]WENd<d1
+R3
+I@CBbZn5cXjc;A5AZm;b@20
+R4
+S1
+R0
+w1753916812
+8C:/MIPS_PIPELINED/src/Branch_Resolution_Unit.sv
+FC:/MIPS_PIPELINED/src/Branch_Resolution_Unit.sv
+!i122 14
+L0 1 27
+R6
+r1
+!s85 0
+31
+Z15 !s108 1754010963.000000
+!s107 C:/MIPS_PIPELINED/src/Branch_Resolution_Unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Branch_Resolution_Unit.sv|
+!i113 1
+R8
+R9
+R10
+n@branch_@resolution_@unit
+vControl_Unit
+R1
+R11
+!i10b 1
+!s100 KA3[7:Z@kB=NWH5QBN=9P1
+R3
+I4LBO57Cz___5mXzQSiT9=2
+R4
+S1
+R0
+w1754007347
+8C:/MIPS_PIPELINED/src/Control_Unit.sv
+FC:/MIPS_PIPELINED/src/Control_Unit.sv
+!i122 10
+L0 1 148
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/MIPS_PIPELINED/src/Control_Unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Control_Unit.sv|
+!i113 1
+R8
+R9
+R10
+n@control_@unit
+vForwarding_Unit
+R1
+R13
+!i10b 1
+!s100 0QN:RC::ZOhbG];AZ3UQg1
+R3
+I_00XZFmPIWDnk2C9cha_F1
+R4
+S1
+R0
+w1753998835
+8C:/MIPS_PIPELINED/src/Forwarding_Unit.sv
+FC:/MIPS_PIPELINED/src/Forwarding_Unit.sv
+!i122 15
+L0 1 53
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/MIPS_PIPELINED/src/Forwarding_Unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Forwarding_Unit.sv|
+!i113 1
+R8
+R9
+R10
+n@forwarding_@unit
+vFour_Two_Mux
+R1
+R2
+!i10b 1
+!s100 CYknj0h<FP=e_I:5GKFXi0
+R3
+I]925D0ZVB4ZzY;K[8<GzC1
+R4
+S1
+R0
+w1753150092
+8C:/MIPS_PIPELINED/src/Four_Two_Mux.sv
+FC:/MIPS_PIPELINED/src/Four_Two_Mux.sv
+!i122 5
+L0 1 12
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/MIPS_PIPELINED/src/Four_Two_Mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Four_Two_Mux.sv|
+!i113 1
+R8
+R9
+R10
+n@four_@two_@mux
+vHazard_Unit
+R1
+R13
+!i10b 1
+!s100 G@fa^1:ZW2b>eAbQ[GdLd0
+R3
+I87bban9Q<[_`4^z9MJTmz3
+R4
+S1
+R0
+w1753826804
+8C:/MIPS_PIPELINED/src/Hazard_Unit.sv
+FC:/MIPS_PIPELINED/src/Hazard_Unit.sv
+!i122 13
+Z16 L0 1 28
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/MIPS_PIPELINED/src/Hazard_Unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Hazard_Unit.sv|
+!i113 1
+R8
+R9
+R10
+n@hazard_@unit
+vMemory_Unit
+R1
+R11
+!i10b 1
+!s100 NIjQHI_KaVbaB]_bSSeB@2
+R3
+IfQC7L;71i12L9gZ<UJc5c3
+R4
+S1
+R0
+w1753925966
+8C:/MIPS_PIPELINED/src/Memory_Unit.sv
+FC:/MIPS_PIPELINED/src/Memory_Unit.sv
+!i122 7
+R14
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/MIPS_PIPELINED/src/Memory_Unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Memory_Unit.sv|
+!i113 1
+R8
+R9
+R10
+n@memory_@unit
+vMIPS_Processor
+R1
+R13
+!i10b 1
+!s100 Dh4UUjD=_0=zDM:C:W?Qd0
+R3
+IC_D>I7<OEeO;1l8I^IShD3
+R4
+S1
+R0
+w1754009873
+8C:/MIPS_PIPELINED/src/MIPS_Processor.sv
+FC:/MIPS_PIPELINED/src/MIPS_Processor.sv
+!i122 16
+L0 1 161
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/MIPS_PIPELINED/src/MIPS_Processor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/MIPS_Processor.sv|
+!i113 1
+R8
+R9
+R10
+n@m@i@p@s_@processor
+vMIPS_Processor_Clock_TB
+R1
+Z17 !s110 1754010964
+!i10b 1
+!s100 7EzOZQWIHAbB16Ta]c][H0
+R3
+IcJ;ZKKV<V6T[?Uj7ke55>3
+R4
+S1
+R0
+w1754010783
+8C:/MIPS_PIPELINED/Quartus/../src/MIPS_Processor_Clock_TB.sv
+FC:/MIPS_PIPELINED/Quartus/../src/MIPS_Processor_Clock_TB.sv
+!i122 20
+L0 2 43
+R6
+r1
+!s85 0
+31
+Z18 !s108 1754010964.000000
+!s107 C:/MIPS_PIPELINED/Quartus/../src/MIPS_Processor_Clock_TB.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/Quartus/../src|C:/MIPS_PIPELINED/Quartus/../src/MIPS_Processor_Clock_TB.sv|
+!i113 1
+R8
+!s92 -sv -work work +incdir+C:/MIPS_PIPELINED/Quartus/../src
+R10
+n@m@i@p@s_@processor_@clock_@t@b
+vRAM
+R1
+R2
+!i10b 1
+!s100 ZXQ?OLRm@jj2[gh@jUXPk2
+R3
+IeUHKfaYJ;^zKf<APcELAK1
+R4
+S1
+R0
+w1753914854
+8C:/MIPS_PIPELINED/src/RAM.sv
+FC:/MIPS_PIPELINED/src/RAM.sv
+!i122 4
+L0 1 50
+R6
+r1
+!s85 0
+31
+R7
 !s107 C:/MIPS_PIPELINED/src/RAM.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/RAM.sv|
 !i113 1
-o-sv -work work
-!s92 -sv -work work +incdir+C:/MIPS_PIPELINED/src
-tCvgOpt 0
+R8
+R9
+R10
 n@r@a@m
+vRegister
+R1
+Z19 !s110 1754010960
+!i10b 1
+!s100 :M93_0NeiOjT>n=IRz5]a1
+R3
+IB6L56?<lPV??l?WVoM;F80
+R4
+S1
+R0
+w1753824867
+8C:/MIPS_PIPELINED/src/Register.sv
+FC:/MIPS_PIPELINED/src/Register.sv
+!i122 3
+L0 1 13
+R6
+r1
+!s85 0
+31
+Z20 !s108 1754010960.000000
+!s107 C:/MIPS_PIPELINED/src/Register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Register.sv|
+!i113 1
+R8
+R9
+R10
+n@register
+vRegister_File
+R1
+R11
+!i10b 1
+!s100 90zz3j<[McH=7Po`Om^Ff3
+R3
+INXYQRWA7diGSHmFQKUBV70
+R4
+S1
+R0
+w1754007439
+8C:/MIPS_PIPELINED/src/Register_File.sv
+FC:/MIPS_PIPELINED/src/Register_File.sv
+!i122 9
+L0 1 49
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/MIPS_PIPELINED/src/Register_File.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Register_File.sv|
+!i113 1
+R8
+R9
+R10
+n@register_@file
+vRegister_v2
+R1
+R17
+!i10b 1
+!s100 MCTfX=;Yik3YzJ`^2zJ2C3
+R3
+Ib;K53:KYmd>R2Mn04EMl01
+R4
+S1
+R0
+w1754003387
+8C:/MIPS_PIPELINED/src/Register_v2.sv
+FC:/MIPS_PIPELINED/src/Register_v2.sv
+!i122 19
+L0 1 15
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:/MIPS_PIPELINED/src/Register_v2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Register_v2.sv|
+!i113 1
+R8
+R9
+R10
+n@register_v2
+vROM
+R1
+R11
+!i10b 1
+!s100 jZf=lLoP]_XOk4PZJ0KUJ0
+R3
+IadXGIVk3>nLNMABgllTib2
+R4
+S1
+R0
+w1753914851
+8C:/MIPS_PIPELINED/src/ROM.sv
+FC:/MIPS_PIPELINED/src/ROM.sv
+!i122 11
+L0 1 33
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/MIPS_PIPELINED/src/ROM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/ROM.sv|
+!i113 1
+R8
+R9
+R10
+n@r@o@m
+vSeven_Segment_Decoder
+R1
+R13
+!i10b 1
+!s100 2zYLDnSDj:BAVTlmbb==b0
+R3
+I0g9b8c<L9g<Ph>VIIGjSF2
+R4
+S1
+R0
+w1753901223
+8C:/MIPS_PIPELINED/src/Seven_Segment_Decoder.sv
+FC:/MIPS_PIPELINED/src/Seven_Segment_Decoder.sv
+!i122 17
+R16
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/MIPS_PIPELINED/src/Seven_Segment_Decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Seven_Segment_Decoder.sv|
+!i113 1
+R8
+R9
+R10
+n@seven_@segment_@decoder
+vShift_l2
+R1
+R19
+!i10b 1
+!s100 aIkfbH`>7_NU8eJL<didK1
+R3
+IE>gbc0z[ODLD@L]zLIMFh3
+R4
+S1
+R0
+w1752960954
+8C:/MIPS_PIPELINED/src/Shift_l2.sv
+FC:/MIPS_PIPELINED/src/Shift_l2.sv
+!i122 2
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 C:/MIPS_PIPELINED/src/Shift_l2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Shift_l2.sv|
+!i113 1
+R8
+R9
+R10
+n@shift_l2
+vShift_l2_v2
+R1
+R17
+!i10b 1
+!s100 cO@6UKfV:B@4CNbZfCJYQ2
+R3
+IIKEg3e4<B8G;P[JHcPe^c0
+R4
+S1
+R0
+w1753918218
+8C:/MIPS_PIPELINED/src/Shift_l2_v2.sv
+FC:/MIPS_PIPELINED/src/Shift_l2_v2.sv
+!i122 18
+R5
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/MIPS_PIPELINED/src/Shift_l2_v2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Shift_l2_v2.sv|
+!i113 1
+R8
+R9
+R10
+n@shift_l2_v2
+vSign_Extend
+R1
+R19
+!i10b 1
+!s100 @TVLA:JkAFI^UM]8Wm04g2
+R3
+IP8Wo6I1eNN4S<IO=HkegZ3
+R4
+S1
+R0
+w1752962674
+8C:/MIPS_PIPELINED/src/Sign_Extend.sv
+FC:/MIPS_PIPELINED/src/Sign_Extend.sv
+!i122 1
+L0 1 7
+R6
+r1
+!s85 0
+31
+R20
+!s107 C:/MIPS_PIPELINED/src/Sign_Extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Sign_Extend.sv|
+!i113 1
+R8
+R9
+R10
+n@sign_@extend
+vTwo_One_Mux
+R1
+R19
+!i10b 1
+!s100 j5HeVNE]a05h5mL:Mji1b3
+R3
+I7obONIQE9Eazkk:GjeSdN2
+R4
+S1
+R0
+w1753824869
+8C:/MIPS_PIPELINED/src/Two_One_Mux.sv
+FC:/MIPS_PIPELINED/src/Two_One_Mux.sv
+!i122 0
+L0 1 10
+R6
+r1
+!s85 0
+31
+R20
+!s107 C:/MIPS_PIPELINED/src/Two_One_Mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/MIPS_PIPELINED/src|C:/MIPS_PIPELINED/src/Two_One_Mux.sv|
+!i113 1
+R8
+R9
+R10
+n@two_@one_@mux

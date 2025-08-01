@@ -1,5 +1,6 @@
 module Memory_Unit #(
-    parameter ADDR_WIDTH = 10
+    parameter ADDR_WIDTH = 10,
+	 parameter MEM_INIT_FILE = "Temp.hex"
 )(
     input  logic [ADDR_WIDTH-1:0] addr,
     input  logic [31:0] data_in,
@@ -19,7 +20,7 @@ logic [1:0] sel;
 logic [31:0] data_im,port0_data,port1_data;
 logic en,out_en;
 //creating components
-RAM #(.ADDR_WIDTH(ADDR_WIDTH))memory(.addr(addr),.clk(clk),.mem_write(en),.write_data(data_in),.mem_read(mem_read),
+RAM #(.ADDR_WIDTH(ADDR_WIDTH),.MEM_INIT_FILE(MEM_INIT_FILE))memory(.addr(addr),.clk(clk),.mem_write(en),.write_data(data_in),.mem_read(mem_read),
 .read_data(data_im));
 
 Register port0(.clk(clk),.data(switches),.out(port0_data),
@@ -41,11 +42,17 @@ always_comb begin
 	endcase
 end
 always_comb begin
-	en = 1'b1;
+	en = 1'b0;
 	out_en = 1'b0;
-	if(write_en == 1'b1 && addr == 10'h3FC) begin
-		en = 1'b0; out_en = 1'b1;
+	if(write_en == 1'b1) begin
+		if(addr == 10'h3FC) begin out_en = 1'b1; end
+	
+		else begin
+		en = 1'b1;
+		end
 	end
+		
+	
 end
 endmodule
 		

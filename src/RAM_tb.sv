@@ -16,8 +16,7 @@ module RAM_tb;
     // Instantiate the RAM
     RAM #(
         .ADDR_WIDTH(ADDR_WIDTH),
-        .DATA_WIDTH(DATA_WIDTH),
-        .MEM_INIT_FILE("")  
+        .DATA_WIDTH(DATA_WIDTH)
     ) dut (
         .clk(clk),
         .mem_write(mem_write),
