@@ -1,4 +1,5 @@
-Overview
+Overview:
+
 This repo contains a 32-bit, 5-stage pipelined MIPS-like CPU implemented in SystemVerilog for deployment on the  DE10-Lite FPGA. It supports  MIPSv1 instructions and ones unique to this project:
 
 Byte-addressed ROM and RAM that by default has an address width of 10. 
@@ -14,7 +15,8 @@ Address handling rules: memory immediates kept as byte offsets; jump/branch targ
 Instructions must be one word, one word = 4 bytes. This is loaded into the ROM
 
 
-Architecture
+Architecture:
+
 Pipeline stages: Instruction Fetch --> Instruction Decode --> Execution --> Memory Access --> Write Back
 
 Branching: BRU in ID outputs branch_taken; HDU flushes on taken branch
